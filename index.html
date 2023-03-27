@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="input">
+            <input type="text" placeholder="Enter Number" id="number">
+        </div>
+        <div class="num">
+            <table>
+                <tr>
+                    <td onclick="setNumber('+')">+</td>
+                    <td onclick="setNumber('-')">-</td>
+                    <td onclick="setNumber('*')">*</td>
+                    <td class="equal" onclick="setNumber('/')">/</td>
+                </tr>
+
+                <tr>
+                    <td onclick="setNumber(9)">9</td>
+                    <td onclick="setNumber(8)">8</td>
+                    <td onclick="setNumber(7)">7</td>
+                    <td rowspan="4" class="equal" onclick="ans()">=</td>
+                </tr>
+                <tr>
+                    <td onclick="setNumber(6)">6</td>
+                    <td onclick="setNumber(5)">5</td>
+                    <td onclick="setNumber(4)">4</td>
+
+                </tr>
+                <tr>
+                    <td onclick="setNumber(3)">3</td>
+                    <td onclick="setNumber(2)">2</td>
+                    <td onclick="setNumber(1)">1</td>
+                </tr>
+                <tr>
+                    <td onclick="setNumber(0)">0</td>
+                    <td onclick="clear()">C</td>
+                    <td onclick="">AC</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
